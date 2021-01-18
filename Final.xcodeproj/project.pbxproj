@@ -14,6 +14,7 @@
 		9115151E25B5F3B700919BA1 /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9115151D25B5F3B700919BA1 /* VideoList.swift */; };
 		9115152825B5F49800919BA1 /* VideoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9115152725B5F49800919BA1 /* VideoRow.swift */; };
 		9115152E25B5F4E300919BA1 /* AddVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9115152D25B5F4E300919BA1 /* AddVideo.swift */; };
+		9115153425B5F91000919BA1 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9115153325B5F91000919BA1 /* Search.swift */; };
 		9134A8E625A4D6FC00C825B8 /* ProFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9134A8E525A4D6FC00C825B8 /* ProFile.swift */; };
 		9134A8F125A4DCAC00C825B8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9134A8F025A4DCAC00C825B8 /* ImagePicker.swift */; };
 		9147C81A25A5A64200A70F34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147C81925A5A64200A70F34 /* SceneDelegate.swift */; };
@@ -91,6 +92,7 @@
 		9115151D25B5F3B700919BA1 /* VideoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoList.swift; sourceTree = "<group>"; };
 		9115152725B5F49800919BA1 /* VideoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRow.swift; sourceTree = "<group>"; };
 		9115152D25B5F4E300919BA1 /* AddVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVideo.swift; sourceTree = "<group>"; };
+		9115153325B5F91000919BA1 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		9134A8E525A4D6FC00C825B8 /* ProFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFile.swift; sourceTree = "<group>"; };
 		9134A8F025A4DCAC00C825B8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		9147C81925A5A64200A70F34 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				9115151D25B5F3B700919BA1 /* VideoList.swift */,
 				9115152725B5F49800919BA1 /* VideoRow.swift */,
 				9115152D25B5F4E300919BA1 /* AddVideo.swift */,
+				9115153325B5F91000919BA1 /* Search.swift */,
 			);
 			path = YTFavorite;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				91C6719A25A429CB00F47649 /* IGUIView.swift in Sources */,
 				9134A8E625A4D6FC00C825B8 /* ProFile.swift in Sources */,
 				9107049A25A5F0C900C00A2E /* YoutubeUIView.swift in Sources */,
+				9115153425B5F91000919BA1 /* Search.swift in Sources */,
 				9107049F25A5F0D800C00A2E /* YoutubeVideoUIView.swift in Sources */,
 				91C6719F25A429D200F47649 /* IGData.swift in Sources */,
 				91C6719525A429C500F47649 /* SafariView.swift in Sources */,

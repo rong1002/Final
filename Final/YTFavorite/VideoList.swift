@@ -12,11 +12,13 @@ struct VideoList: View {
     @FetchRequest(entity: Video.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Video.title, ascending: true)])
     var videos: FetchedResults<Video>
     @State var isPresented = false
-    
+    @State private var searchText = ""
+
     var body: some View {
         NavigationView {
-            VStack{
+            VStack{       
                 List {
+                    Search(text: $searchText)
                     ForEach(videos, id: \.title) {
                         VideoRow(video: $0)
                     }
