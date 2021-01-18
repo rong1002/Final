@@ -3,10 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9107048C25A5DEBB00C00A2E /* ProFIleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9107048B25A5DEBB00C00A2E /* ProFIleData.swift */; };
+		9107049225A5F0B800C00A2E /* YoutubeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9107049125A5F0B800C00A2E /* YoutubeData.swift */; };
+		9107049A25A5F0C900C00A2E /* YoutubeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9107049925A5F0C900C00A2E /* YoutubeUIView.swift */; };
+		9107049F25A5F0D800C00A2E /* YoutubeVideoUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9107049E25A5F0D800C00A2E /* YoutubeVideoUIView.swift */; };
+		9115151E25B5F3B700919BA1 /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9115151D25B5F3B700919BA1 /* VideoList.swift */; };
+		9115152825B5F49800919BA1 /* VideoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9115152725B5F49800919BA1 /* VideoRow.swift */; };
+		9115152E25B5F4E300919BA1 /* AddVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9115152D25B5F4E300919BA1 /* AddVideo.swift */; };
+		9134A8E625A4D6FC00C825B8 /* ProFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9134A8E525A4D6FC00C825B8 /* ProFile.swift */; };
+		9134A8F125A4DCAC00C825B8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9134A8F025A4DCAC00C825B8 /* ImagePicker.swift */; };
+		9147C81A25A5A64200A70F34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147C81925A5A64200A70F34 /* SceneDelegate.swift */; };
+		91BBB6EE25ADADFB00EBE0FE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BBB6ED25ADADFB00EBE0FE /* WidgetKit.framework */; };
+		91BBB6F025ADADFB00EBE0FE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BBB6EF25ADADFB00EBE0FE /* SwiftUI.framework */; };
+		91BBB6F325ADADFB00EBE0FE /* G_E_M.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BBB6F225ADADFB00EBE0FE /* G_E_M.swift */; };
+		91BBB6F625ADADFD00EBE0FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91BBB6F525ADADFD00EBE0FE /* Assets.xcassets */; };
+		91BBB6F825ADADFD00EBE0FE /* G_E_M.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 91BBB6F425ADADFB00EBE0FE /* G_E_M.intentdefinition */; };
+		91BBB6F925ADADFD00EBE0FE /* G_E_M.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 91BBB6F425ADADFB00EBE0FE /* G_E_M.intentdefinition */; };
+		91BBB6FC25ADADFD00EBE0FE /* G.E.MExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 91BBB6EB25ADADFB00EBE0FE /* G.E.MExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		91C6713625A4282500F47649 /* FinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C6713525A4282500F47649 /* FinalApp.swift */; };
 		91C6713825A4282500F47649 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C6713725A4282500F47649 /* ContentView.swift */; };
 		91C6713A25A4282700F47649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91C6713925A4282700F47649 /* Assets.xcassets */; };
@@ -15,9 +32,27 @@
 		91C6714225A4282700F47649 /* Final.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91C6714025A4282700F47649 /* Final.xcdatamodeld */; };
 		91C6714D25A4282700F47649 /* FinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C6714C25A4282700F47649 /* FinalTests.swift */; };
 		91C6715825A4282700F47649 /* FinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C6715725A4282700F47649 /* FinalUITests.swift */; };
+		91C6716A25A4283F00F47649 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 91C6716925A4283F00F47649 /* SDWebImageSwiftUI */; };
+		91C6717025A4284F00F47649 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 91C6716F25A4284F00F47649 /* SwiftyJSON */; };
+		91C6717625A4285900F47649 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 91C6717525A4285900F47649 /* FacebookLogin */; };
+		91C6717B25A4287200F47649 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C6717A25A4287200F47649 /* AppDelegate.swift */; };
+		91C6718A25A428B400F47649 /* FBlogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C6718925A428B400F47649 /* FBlogin.swift */; };
+		91C6719525A429C500F47649 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C6719425A429C500F47649 /* SafariView.swift */; };
+		91C6719A25A429CB00F47649 /* IGUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C6719925A429CB00F47649 /* IGUIView.swift */; };
+		91C6719F25A429D200F47649 /* IGData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C6719E25A429D100F47649 /* IGData.swift */; };
+		91C671A425A429D500F47649 /* IGPostUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C671A325A429D500F47649 /* IGPostUIView.swift */; };
+		91E7CC7F25B1579C008B1D03 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E7CC7E25B1579C008B1D03 /* Animation.swift */; };
+		91E7CC9125B16182008B1D03 /* SwiftUIPullToRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 91E7CC9025B16182008B1D03 /* SwiftUIPullToRefresh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		91BBB6FA25ADADFD00EBE0FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91C6712A25A4282500F47649 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91BBB6EA25ADADFB00EBE0FE;
+			remoteInfo = G.E.MExtension;
+		};
 		91C6714925A4282700F47649 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 91C6712A25A4282500F47649 /* Project object */;
@@ -34,7 +69,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		91BBB70025ADADFD00EBE0FE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				91BBB6FC25ADADFD00EBE0FE /* G.E.MExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9107048B25A5DEBB00C00A2E /* ProFIleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFIleData.swift; sourceTree = "<group>"; };
+		9107049125A5F0B800C00A2E /* YoutubeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeData.swift; sourceTree = "<group>"; };
+		9107049925A5F0C900C00A2E /* YoutubeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeUIView.swift; sourceTree = "<group>"; };
+		9107049E25A5F0D800C00A2E /* YoutubeVideoUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoUIView.swift; sourceTree = "<group>"; };
+		9115151D25B5F3B700919BA1 /* VideoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoList.swift; sourceTree = "<group>"; };
+		9115152725B5F49800919BA1 /* VideoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRow.swift; sourceTree = "<group>"; };
+		9115152D25B5F4E300919BA1 /* AddVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVideo.swift; sourceTree = "<group>"; };
+		9134A8E525A4D6FC00C825B8 /* ProFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFile.swift; sourceTree = "<group>"; };
+		9134A8F025A4DCAC00C825B8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9147C81925A5A64200A70F34 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		91BBB6EB25ADADFB00EBE0FE /* G.E.MExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = G.E.MExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		91BBB6ED25ADADFB00EBE0FE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		91BBB6EF25ADADFB00EBE0FE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		91BBB6F225ADADFB00EBE0FE /* G_E_M.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = G_E_M.swift; sourceTree = "<group>"; };
+		91BBB6F425ADADFB00EBE0FE /* G_E_M.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = G_E_M.intentdefinition; sourceTree = "<group>"; };
+		91BBB6F525ADADFD00EBE0FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91BBB6F725ADADFD00EBE0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91C6713225A4282500F47649 /* Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C6713525A4282500F47649 /* FinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalApp.swift; sourceTree = "<group>"; };
 		91C6713725A4282500F47649 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,13 +115,33 @@
 		91C6715325A4282700F47649 /* FinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C6715725A4282700F47649 /* FinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalUITests.swift; sourceTree = "<group>"; };
 		91C6715925A4282700F47649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91C6717A25A4287200F47649 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91C6718925A428B400F47649 /* FBlogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBlogin.swift; sourceTree = "<group>"; };
+		91C6719425A429C500F47649 /* SafariView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		91C6719925A429CB00F47649 /* IGUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGUIView.swift; sourceTree = "<group>"; };
+		91C6719E25A429D100F47649 /* IGData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGData.swift; sourceTree = "<group>"; };
+		91C671A325A429D500F47649 /* IGPostUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGPostUIView.swift; sourceTree = "<group>"; };
+		91E7CC7E25B1579C008B1D03 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		91BBB6E825ADADFB00EBE0FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BBB6F025ADADFB00EBE0FE /* SwiftUI.framework in Frameworks */,
+				91BBB6EE25ADADFB00EBE0FE /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91C6712F25A4282500F47649 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91C6717025A4284F00F47649 /* SwiftyJSON in Frameworks */,
+				91C6716A25A4283F00F47649 /* SDWebImageSwiftUI in Frameworks */,
+				91E7CC9125B16182008B1D03 /* SwiftUIPullToRefresh in Frameworks */,
+				91C6717625A4285900F47649 /* FacebookLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +162,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9107049025A5EB9D00C00A2E /* YoutubeView */ = {
+			isa = PBXGroup;
+			children = (
+				9107049125A5F0B800C00A2E /* YoutubeData.swift */,
+				9107049925A5F0C900C00A2E /* YoutubeUIView.swift */,
+				9107049E25A5F0D800C00A2E /* YoutubeVideoUIView.swift */,
+			);
+			path = YoutubeView;
+			sourceTree = "<group>";
+		};
+		9147C82125A5B29B00A70F34 /* ProFile */ = {
+			isa = PBXGroup;
+			children = (
+				91E7CC7E25B1579C008B1D03 /* Animation.swift */,
+				9134A8E525A4D6FC00C825B8 /* ProFile.swift */,
+				9134A8F025A4DCAC00C825B8 /* ImagePicker.swift */,
+				9107048B25A5DEBB00C00A2E /* ProFIleData.swift */,
+			);
+			path = ProFile;
+			sourceTree = "<group>";
+		};
+		91B1C2A325B5F2CB00A60EBC /* YTFavorite */ = {
+			isa = PBXGroup;
+			children = (
+				9115151D25B5F3B700919BA1 /* VideoList.swift */,
+				9115152725B5F49800919BA1 /* VideoRow.swift */,
+				9115152D25B5F4E300919BA1 /* AddVideo.swift */,
+			);
+			path = YTFavorite;
+			sourceTree = "<group>";
+		};
+		91BBB6EC25ADADFB00EBE0FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91BBB6ED25ADADFB00EBE0FE /* WidgetKit.framework */,
+				91BBB6EF25ADADFB00EBE0FE /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91BBB6F125ADADFB00EBE0FE /* G.E.M */ = {
+			isa = PBXGroup;
+			children = (
+				91BBB6F225ADADFB00EBE0FE /* G_E_M.swift */,
+				91BBB6F425ADADFB00EBE0FE /* G_E_M.intentdefinition */,
+				91BBB6F525ADADFD00EBE0FE /* Assets.xcassets */,
+				91BBB6F725ADADFD00EBE0FE /* Info.plist */,
+			);
+			path = G.E.M;
+			sourceTree = "<group>";
+		};
 		91C6712925A4282500F47649 = {
 			isa = PBXGroup;
 			children = (
 				91C6713425A4282500F47649 /* Final */,
 				91C6714B25A4282700F47649 /* FinalTests */,
 				91C6715625A4282700F47649 /* FinalUITests */,
+				91BBB6F125ADADFB00EBE0FE /* G.E.M */,
+				91BBB6EC25ADADFB00EBE0FE /* Frameworks */,
 				91C6713325A4282500F47649 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +231,7 @@
 				91C6713225A4282500F47649 /* Final.app */,
 				91C6714825A4282700F47649 /* FinalTests.xctest */,
 				91C6715325A4282700F47649 /* FinalUITests.xctest */,
+				91BBB6EB25ADADFB00EBE0FE /* G.E.MExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,7 +239,14 @@
 		91C6713425A4282500F47649 /* Final */ = {
 			isa = PBXGroup;
 			children = (
+				91C6717A25A4287200F47649 /* AppDelegate.swift */,
+				9147C81925A5A64200A70F34 /* SceneDelegate.swift */,
 				91C6713525A4282500F47649 /* FinalApp.swift */,
+				91C6718925A428B400F47649 /* FBlogin.swift */,
+				91C671A825A42A5700F47649 /* IGView */,
+				9107049025A5EB9D00C00A2E /* YoutubeView */,
+				91B1C2A325B5F2CB00A60EBC /* YTFavorite */,
+				9147C82125A5B29B00A70F34 /* ProFile */,
 				91C6713725A4282500F47649 /* ContentView.swift */,
 				91C6713925A4282700F47649 /* Assets.xcassets */,
 				91C6713E25A4282700F47649 /* Persistence.swift */,
@@ -136,9 +283,37 @@
 			path = FinalUITests;
 			sourceTree = "<group>";
 		};
+		91C671A825A42A5700F47649 /* IGView */ = {
+			isa = PBXGroup;
+			children = (
+				91C6719E25A429D100F47649 /* IGData.swift */,
+				91C6719425A429C500F47649 /* SafariView.swift */,
+				91C671A325A429D500F47649 /* IGPostUIView.swift */,
+				91C6719925A429CB00F47649 /* IGUIView.swift */,
+			);
+			path = IGView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		91BBB6EA25ADADFB00EBE0FE /* G.E.MExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91BBB6FD25ADADFD00EBE0FE /* Build configuration list for PBXNativeTarget "G.E.MExtension" */;
+			buildPhases = (
+				91BBB6E725ADADFB00EBE0FE /* Sources */,
+				91BBB6E825ADADFB00EBE0FE /* Frameworks */,
+				91BBB6E925ADADFB00EBE0FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = G.E.MExtension;
+			productName = G.E.MExtension;
+			productReference = 91BBB6EB25ADADFB00EBE0FE /* G.E.MExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		91C6713125A4282500F47649 /* Final */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91C6715C25A4282700F47649 /* Build configuration list for PBXNativeTarget "Final" */;
@@ -146,12 +321,20 @@
 				91C6712E25A4282500F47649 /* Sources */,
 				91C6712F25A4282500F47649 /* Frameworks */,
 				91C6713025A4282500F47649 /* Resources */,
+				91BBB70025ADADFD00EBE0FE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				91BBB6FB25ADADFD00EBE0FE /* PBXTargetDependency */,
 			);
 			name = Final;
+			packageProductDependencies = (
+				91C6716925A4283F00F47649 /* SDWebImageSwiftUI */,
+				91C6716F25A4284F00F47649 /* SwiftyJSON */,
+				91C6717525A4285900F47649 /* FacebookLogin */,
+				91E7CC9025B16182008B1D03 /* SwiftUIPullToRefresh */,
+			);
 			productName = Final;
 			productReference = 91C6713225A4282500F47649 /* Final.app */;
 			productType = "com.apple.product-type.application";
@@ -201,6 +384,9 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					91BBB6EA25ADADFB00EBE0FE = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					91C6713125A4282500F47649 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -223,6 +409,12 @@
 				Base,
 			);
 			mainGroup = 91C6712925A4282500F47649;
+			packageReferences = (
+				91C6716825A4283F00F47649 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				91C6716E25A4284F00F47649 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				91C6717425A4285900F47649 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				91E7CC8F25B16182008B1D03 /* XCRemoteSwiftPackageReference "SwiftUI-PullToRefresh" */,
+			);
 			productRefGroup = 91C6713325A4282500F47649 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -230,11 +422,20 @@
 				91C6713125A4282500F47649 /* Final */,
 				91C6714725A4282700F47649 /* FinalTests */,
 				91C6715225A4282700F47649 /* FinalUITests */,
+				91BBB6EA25ADADFB00EBE0FE /* G.E.MExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		91BBB6E925ADADFB00EBE0FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BBB6F625ADADFD00EBE0FE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91C6713025A4282500F47649 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,13 +462,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		91BBB6E725ADADFB00EBE0FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BBB6F825ADADFD00EBE0FE /* G_E_M.intentdefinition in Sources */,
+				91BBB6F325ADADFB00EBE0FE /* G_E_M.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91C6712E25A4282500F47649 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9134A8F125A4DCAC00C825B8 /* ImagePicker.swift in Sources */,
+				9115151E25B5F3B700919BA1 /* VideoList.swift in Sources */,
+				9147C81A25A5A64200A70F34 /* SceneDelegate.swift in Sources */,
+				91BBB6F925ADADFD00EBE0FE /* G_E_M.intentdefinition in Sources */,
+				9115152825B5F49800919BA1 /* VideoRow.swift in Sources */,
 				91C6714225A4282700F47649 /* Final.xcdatamodeld in Sources */,
+				9107049225A5F0B800C00A2E /* YoutubeData.swift in Sources */,
+				9115152E25B5F4E300919BA1 /* AddVideo.swift in Sources */,
+				91C671A425A429D500F47649 /* IGPostUIView.swift in Sources */,
+				9107048C25A5DEBB00C00A2E /* ProFIleData.swift in Sources */,
 				91C6713F25A4282700F47649 /* Persistence.swift in Sources */,
+				91C6718A25A428B400F47649 /* FBlogin.swift in Sources */,
+				91C6719A25A429CB00F47649 /* IGUIView.swift in Sources */,
+				9134A8E625A4D6FC00C825B8 /* ProFile.swift in Sources */,
+				9107049A25A5F0C900C00A2E /* YoutubeUIView.swift in Sources */,
+				9107049F25A5F0D800C00A2E /* YoutubeVideoUIView.swift in Sources */,
+				91C6719F25A429D200F47649 /* IGData.swift in Sources */,
+				91C6719525A429C500F47649 /* SafariView.swift in Sources */,
 				91C6713825A4282500F47649 /* ContentView.swift in Sources */,
+				91C6717B25A4287200F47649 /* AppDelegate.swift in Sources */,
+				91E7CC7F25B1579C008B1D03 /* Animation.swift in Sources */,
 				91C6713625A4282500F47649 /* FinalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +519,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		91BBB6FB25ADADFD00EBE0FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91BBB6EA25ADADFB00EBE0FE /* G.E.MExtension */;
+			targetProxy = 91BBB6FA25ADADFD00EBE0FE /* PBXContainerItemProxy */;
+		};
 		91C6714A25A4282700F47649 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 91C6713125A4282500F47649 /* Final */;
@@ -304,6 +537,48 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		91BBB6FE25ADADFD00EBE0FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9ZF4JANQ4;
+				INFOPLIST_FILE = G.E.M/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "rong1002.Final.G-E-M";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91BBB6FF25ADADFD00EBE0FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9ZF4JANQ4;
+				INFOPLIST_FILE = G.E.M/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "rong1002.Final.G-E-M";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		91C6715A25A4282700F47649 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -423,6 +698,7 @@
 		91C6715D25A4282700F47649 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +721,7 @@
 		91C6715E25A4282700F47649 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +828,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		91BBB6FD25ADADFD00EBE0FE /* Build configuration list for PBXNativeTarget "G.E.MExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91BBB6FE25ADADFD00EBE0FE /* Debug */,
+				91BBB6FF25ADADFD00EBE0FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		91C6712D25A4282500F47649 /* Build configuration list for PBXProject "Final" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -588,6 +874,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91C6716825A4283F00F47649 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+		91C6716E25A4284F00F47649 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		91C6717425A4285900F47649 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+		91E7CC8F25B16182008B1D03 /* XCRemoteSwiftPackageReference "SwiftUI-PullToRefresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/phuhuynh2411/SwiftUI-PullToRefresh";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91C6716925A4283F00F47649 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91C6716825A4283F00F47649 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		91C6716F25A4284F00F47649 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91C6716E25A4284F00F47649 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		91C6717525A4285900F47649 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91C6717425A4285900F47649 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		91E7CC9025B16182008B1D03 /* SwiftUIPullToRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91E7CC8F25B16182008B1D03 /* XCRemoteSwiftPackageReference "SwiftUI-PullToRefresh" */;
+			productName = SwiftUIPullToRefresh;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		91C6714025A4282700F47649 /* Final.xcdatamodeld */ = {

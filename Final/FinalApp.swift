@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FacebookCore
 
 @main
 struct FinalApp: App {
@@ -14,7 +15,11 @@ struct FinalApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onOpenURL(perform: { url in
+                    ApplicationDelegate.shared.application(UIApplication.shared, open: url, sourceApplication: nil, annotation: UIApplication.OpenURLOptionsKey.annotation)
+                })
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            
         }
     }
 }
