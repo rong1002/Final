@@ -67,10 +67,10 @@ struct ProFile: View{
                 return Alert(title: Text("儲存成功"))
             }
             .onAppear{
-                if self.people.people.count>0{
-                    self.username=self.people.people[0].username
-                    self.email=self.people.people[0].email
-                    self.selectDate=self.people.people[0].birth
+                if people.people.count>0{
+                    username = people.people[0].username
+                    email = people.people[0].email
+                    selectDate = people.people[0].birth
                 }
                 if photoData.photos.count>0{ selectImage=UIImage(contentsOfFile: photoData.photos[0].imagePath)!}
         }

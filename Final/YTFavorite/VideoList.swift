@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreImage.CIFilterBuiltins
 
 struct VideoList: View {
     @Environment(\.managedObjectContext) var managedObjectContext
@@ -13,12 +14,37 @@ struct VideoList: View {
     var videos: FetchedResults<Video>
     @State var isPresented = false
     @State private var searchText = ""
-
+    let context = CIContext()
+    let filter = CIFilter.qrCodeGenerator()
+    
     var body: some View {
         NavigationView {
             VStack{       
                 List {
                     Search(text: $searchText)
+                    HStack {
+                        Spacer()
+                        VStack {
+                            Text("G.E.M Instagram")
+                            Image(uiImage: generateQRCode(from: "https://www.instagram.com/gem0816/"))
+                                .interpolation(.none)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 100, height: 100)
+                                .transition(.slide)
+                        }
+                        Spacer()
+                        VStack {
+                            Text("G.E.M Youtube")
+                            Image(uiImage: generateQRCode(from: "https://www.youtube.com/channel/UCsLWG2t7n9LFsvH0wR2rtpw"))
+                                .interpolation(.none)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 100, height: 100)
+                                .transition(.slide)
+                        }
+                        Spacer()
+                    }
                     ForEach(videos, id: \.title) {
                         VideoRow(video: $0)
                     }
@@ -47,6 +73,19 @@ struct VideoList: View {
             .navigationBarTitle(Text("Favorite"))
             
         }
+    }
+    
+    func generateQRCode(from string: String) -> UIImage {
+        let data = Data(string.utf8)
+        filter.setValue(data, forKey: "inputMessage")
+        
+        if let outputImage = filter.outputImage {
+            if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
+                return UIImage(cgImage: cgimg)
+            }
+        }
+        
+        return UIImage(systemName: "xmark.circle") ?? UIImage()
     }
     
     func deleteVideo(at offsets: IndexSet) {

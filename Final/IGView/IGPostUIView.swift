@@ -12,8 +12,8 @@ import AVKit
 struct IGPostUIView: View {
     @State private var showingSheet = false
     @State private var scale: CGFloat = 1
+    @State private var newScale: CGFloat = 1
     @State var duration: Double = 1
-    
     var profilePicUrlHd: String
     var username: String
     var isVerified: Bool
@@ -23,7 +23,7 @@ struct IGPostUIView: View {
     var display_url : String
     var edge_media_to_comment : Int
     var edge_liked_by : Int
-        
+    
     var body: some View {
         ScrollView(.vertical){
             VStack(alignment: .leading, spacing: 10){
@@ -54,7 +54,7 @@ struct IGPostUIView: View {
                 .padding(.horizontal)
             }
             .padding(.vertical)
-
+            
             WebImage(url: URL(string: display_url)!)
                 .resizable()
                 .scaledToFit()
@@ -63,7 +63,9 @@ struct IGPostUIView: View {
                 .scaleEffect(scale)
                 .gesture(MagnificationGesture()
                             .onChanged { value in
-                                scale = value.magnitude
+                                scale = newScale * value.magnitude
+                            }.onEnded { value in
+                                newScale = scale
                             })
             HStack(spacing: 20){
                 Image("liked")
@@ -91,7 +93,7 @@ struct IGPostUIView: View {
                     .scaledToFit()
                     .frame(width:UIScreen.main.bounds.width/15)
             }.padding(.horizontal)
-
+            
             HStack{
                 VStack(alignment: .leading, spacing: 5){
                     Text("\(edge_liked_by)個讚")
@@ -117,17 +119,17 @@ struct IGPostUIView_Previews: PreviewProvider {
 }
 
 struct ActivityView: UIViewControllerRepresentable {
-
+    
     let activityItems: [Any]
     let applicationActivities: [UIActivity]?
-
+    
     func makeUIViewController(context: UIViewControllerRepresentableContext<ActivityView>) -> UIActivityViewController {
         return UIActivityViewController(activityItems: activityItems,
                                         applicationActivities: applicationActivities)
     }
-
+    
     func updateUIViewController(_ uiViewController: UIActivityViewController,
                                 context: UIViewControllerRepresentableContext<ActivityView>) {
-
+        
     }
 }

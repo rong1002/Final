@@ -7,7 +7,6 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
-import SwiftUIPullToRefresh
 
 struct IGUIView: View {
     @State var showRefreshView = false

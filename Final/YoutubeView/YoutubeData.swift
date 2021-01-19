@@ -9,9 +9,9 @@ import SwiftUI
 import Foundation
 import Combine
 
-    struct YTPlaylistData: Codable , Identifiable{
+struct YTPlaylistData: Codable , Identifiable{
     let id = UUID()
-     var items: [ItemsYTPlaylistData]
+    var items: [ItemsYTPlaylistData]
 }
 
 struct ItemsYTPlaylistData: Codable, Identifiable{
@@ -51,7 +51,7 @@ struct SnippetChannel: Codable{
     var title :String
     var description : String
     var thumbnails: ThumbnailsSnippetChannel
-
+    
 }
 struct ThumbnailsSnippetChannel: Codable {
     var high: highThumbnailsSnippetChannel
@@ -71,29 +71,6 @@ struct ImageBrandingSettings: Codable{
     var bannerExternalUrl: String
 }
 
-
-class YTSearchData: ObservableObject{
-    var cancel: AnyCancellable?
-    @Published var itemsYTPlaylistData = [YTPlaylistData]()
-    
-    init(){
-        // 解碼，讀檔
-        if let data = UserDefaults.standard.data(forKey: "users"){
-          let decoder = JSONDecoder()
-          if let decodedData = try? decoder.decode([YTPlaylistData].self, from: data){
-            itemsYTPlaylistData = decodedData
-          }
-        }
-        // 編碼，存檔
-        cancel = $itemsYTPlaylistData
-            .sink(receiveValue: { (value) in
-            let encoder = JSONEncoder()
-            if let data = try? encoder.encode(value) {
-              UserDefaults.standard.set(data, forKey: "users")
-             }
-            })
-    }
-}
 //個人資料
 //https://www.googleapis.com/youtube/v3/channels?part=brandingSettings,snippet,contentDetails,statistics,status&id=UCsLWG2t7n9LFsvH0wR2rtpw&key=AIzaSyA3aE1DeZN02R_cSphit-dMzt6r7aBZtwY
 
